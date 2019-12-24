@@ -23,9 +23,9 @@ function draw() {
   }
   stroke(0);
   fill("#ffffff");
-  ellipse(windowWidth / 2, windowHeight / 5 * 4, 250);
-  ellipse(windowWidth / 2, windowHeight / 5 * 3, 200);
-  ellipse(windowWidth / 2, windowHeight / 5 * 2, 150);
+  ellipse(windowWidth / 2, windowHeight / 5 * 4 - 50, 350);
+  ellipse(windowWidth / 2, windowHeight / 5 * 3 - 25, 325);
+  ellipse(windowWidth / 2, windowHeight / 5 * 2, 300);
   fill("#ffc400");
   triangle(windowWidth / 2 + 10, windowHeight / 2 - 30, windowWidth / 2 - 10, windowHeight / 2 - 30, windowWidth / 2 - 50, windowHeight / 2 + 50);
   fill("#000000");

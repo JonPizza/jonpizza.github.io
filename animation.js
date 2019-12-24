@@ -4,6 +4,7 @@ function setup() {
   myCanv.parent("animation");
   frameRate(30);
   textSize(windowWidth / 10);
+  var img = loadImage('snowman-clipart-9.png');
 }
 
 var c;
@@ -21,16 +22,7 @@ function draw() {
     fill("#000000");
     text('Merry Christmas!!', 50, c * 50 + 100);
   }
-  stroke(0);
-  fill("#ffffff");
-  ellipse(windowWidth / 2, windowHeight / 5 * 4 - 50, 350);
-  ellipse(windowWidth / 2, windowHeight / 5 * 3 - 25, 325);
-  ellipse(windowWidth / 2, windowHeight / 5 * 2, 300);
-  fill("#ffc400");
-  triangle(windowWidth / 2 + 10, windowHeight / 2 - 30, windowWidth / 2 - 10, windowHeight / 2 - 30, windowWidth / 2 - 50, windowHeight / 2 + 50);
-  fill("#000000");
-  ellipse(windowWidth / 2 - 20, windowHeight / 5 * 2 - 10, 20);
-  ellipse(windowWidth / 2 + 20, windowHeight / 5 * 2 - 10, 20);
+  image(img, windowWidth / 2, windowHeight / 2 - 20);
 }
 
 function windowResized() {

@@ -20,6 +20,7 @@ function draw() {
     ellipse((windowWidth / 2) * c, windowHeight / 2 * c + 1, 100 * i);
     fill("#000000");
     text('Merry Christmas!!', 50, c * 50 + 100);
+    text('Happy New Year!', 50, c * 50 + 350);
   }
 }
 

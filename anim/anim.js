@@ -1,19 +1,9 @@
-const topTextStyle = new PIXI.TextStyle({
+const textStyle = new PIXI.TextStyle({
     fontFamily: 'Arial', 
     fontSize: 34, 
     fill: 0xffffff, 
     align: 'center'
 });
-
-function getWindowWidth() {
-    let renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, this.options);
-    return renderer.width;
-}
-
-function getWindowWidth() {
-    let renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, this.options);
-    return renderer.height;
-}
 
 // Create our application instance
 var app = new PIXI.Application({
@@ -24,9 +14,14 @@ var app = new PIXI.Application({
 
 document.body.appendChild(app.view);
 
-let text = new PIXI.Text('Stream Ciphers Animated', topTextStyle);
+let ttext = new PIXI.Text('Stream Ciphers Animated', textStyle);
+let btext = new PIXI.Text('~JonPizza', textStyle);
 
-text.position.x = 10;
-text.position.y = 10;
+btext.position.x = window.innerWidth - 34 * 5;
+btext.position.y = window.innerHeight - 44;
 
-app.stage.addChild(text); 
+ttext.position.x = 10;
+ttext.position.y = 10;
+
+app.stage.addChild(ttext); 
+app.stage.addChild(btext);
